@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Users";
+}
+
+<div class="LoginUsers">
+    <div class="LoginUsersPanel">
+        <div class="LoginUsersArea">
+            <table class="LoginUsersTable">
+                <tr class="LoginUsersTableRow1">
+                    <td colspan="3">
+                        Felhasználók
+                    </td>
+                </tr>
+                <tr class="LoginUsersTableRow2">
+                    <td>Név:</td>
+                    <td>Email:</td>
+                    <td>Regisztráció Ideje:</td>
+                </tr>
+                @if (ViewBag.Users != null)
+                {
+                    foreach (var oneItem in ViewBag.Users)
+                    {
+                        <tr class="LoginUsersTableContent">
+                            <td>@oneItem.Name</td>
+                            <td>@oneItem.Email</td>
+                            <td>@oneItem.FormatRegistrationDate()</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+    <div class="LoginUsersBackLink">@Html.ActionLink("Vissza", "LoggedIn", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+    <div class="LoginUsersSpace"></div>
+</div>
+

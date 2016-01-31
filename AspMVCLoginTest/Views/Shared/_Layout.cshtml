@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <link href="~/Content/LoginStyle.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top LoginHeader">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="LoginMessageLine">
+                        @if (Session != null && Session["UserId"] != null && Session["UserName"] != null && Session["UserEmail"] != null &&
+                             Session["UserRegistrationDate"] != null && Session["UserIsDeleted"] != null &&
+                             (int)Session["UserId"] > 0 && !string.IsNullOrEmpty((string)Session["UserName"]) &&
+                             !string.IsNullOrEmpty((string)Session["UserEmail"]) && (DateTime)Session["UserRegistrationDate"] != DateTime.MinValue &&
+                             (bool)Session["UserIsDeleted"] == false)
+                        {
+                            <label class="LoginWelcomeLabel" id="LoginWelcomeLabel" >Bejelentkezve: @Session["UserName"]</label>
+                            <div class="LoginLogoutLink" id="LoginLogoutLink" >@Html.ActionLink("Kijelentkezés", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+                        }
+                    </div>
+                    <div class="LoginMenuLine">
+                        @if (Session == null || Session["UserId"] == null || Session["UserName"] == null || Session["UserEmail"] == null ||
+                             Session["UserRegistrationDate"] == null || Session["UserIsDeleted"] == null || 
+                             (int)Session["UserId"] < 1 || string.IsNullOrEmpty((string)Session["UserName"]) ||
+                             string.IsNullOrEmpty((string)Session["UserEmail"]) || (DateTime)Session["UserRegistrationDate"] == DateTime.MinValue ||
+                             (bool)Session["UserIsDeleted"] == true)
+                        {
+                            <div class="LoginLoginActionLink" id="LoginLoginActionLink">@Html.ActionLink("Bejelentkezés", "Login", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+                            <div class="LoginRegistrationActionLink" id="LoginRegistrationActionLink">@Html.ActionLink("Regisztráció", "Registration", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="LoginSeperatorLine" />
+        <div class="container body-content LoginMain">
+            @RenderBody()
+        </div>
+        <div class="LoginFooter">
+            <div class="LoginCredits">
+                <div class="LoginName">Kóder Károly</div>
+                <div class="LoginEmail">koder.karoly@nincsmail.hu</div>
+            </div>
+        </div>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/LoginScript.js"></script>
+    </body>
+</html>

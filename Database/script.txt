@@ -1,0 +1,17 @@
+CREATE DATABASE AspMVCLoginTestDatabase
+
+
+USE AspMVCLoginTestDatabase
+GO
+CREATE TABLE Users
+(
+Id int NOT NULL PRIMARY KEY,
+Name varchar(50) NOT NULL,
+Email varchar(50) UNIQUE NOT NULL,
+Password varchar(50) UNIQUE NOT NULL,
+RegistrationDate datetime NOT NULL,
+IsDeleted bit NOT NULL
+)
+
+
+INSERT INTO AspMVCLoginTestDatabase.dbo.Users (Id, Name, Email, Password, RegistrationDate, IsDeleted) VALUES (1, 'Kóder Károly', 'koder.karoly@nincsmail.hu', 'Pas$w0rd', '2016.02.01 00:00:00.000', 0)

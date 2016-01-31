@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+}
+
+<div class="LoginRegistration">
+    <div class="LoginRegistrationPanel">
+        <div class="LoginRegistrationArea">
+            <label class="LoginRegistrationTitleLabel">Regisztráció</label>
+            <hr class="LoginRegistrationSeperatorLine" />
+            <form class="LoginRegistrationForm" method="post">
+                <div class="LoginRegistrationNameContainer">
+                    <label class="LoginRegistrationNameLabel Label">Név:</label>
+                    <input type="text" value="" class="LoginRegistrationNameTextBox TextBox" name="userName" id="LoginRegistrationNameTextBox" />
+                </div>
+                <div class="LoginRegistrationEmailContainer">
+                    <label class="LoginRegistrationEmailLabel Label">Email:</label>
+                    <input type="text" value="" class="LoginRegistrationEmailTextBox TextBox" name="userEmail" id="LoginRegistrationEmailTextBox" />
+                </div>
+                <div class="LoginRegistrationPasswordContainer">
+                    <label class="LoginRegistrationPasswordLabel Label">Jelszó:</label>
+                    <input type="password" value="" class="LoginRegistrationPasswordTextBox TextBox" name="userPassword" id="LoginRegistrationPasswordTextBox" />
+                </div>
+                <div class="LoginRegistrationPasswordAgainContainer">
+                    <label class="LoginRegistrationPasswordAgainLabel Label">Jelszó megint:</label>
+                    <input type="password" value="" class="LoginRegistrationPasswordAgainTextBox TextBox" name="userPasswordAgain" id="LoginRegistrationPasswordAgainTextBox" />
+                </div>
+                <div class="LoginRegistrationButtonsContainer">
+                    <input type="submit" value="Regisztrálás" class="LoginRegistrationRegisterButton Button" id="LoginRegistrationRegisterButton" disabled />
+                    <input type="button" value="Törlés" class="LoginRegistrationResetButton Button" id="LoginRegistrationResetButton" disabled />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="LoginRegistrationBackLink">@Html.ActionLink("Vissza", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+</div>
+

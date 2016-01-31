@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="LoginLogin">
+    <div class="LoginLoginPanel">
+        <div class="LoginLoginArea">
+            <label class="LoginLoginTitleLabel">Bejelentkezés</label>
+            <hr class="LoginLoginSeperatorLine" />
+            <form class="LoginLoginForm" method="post">
+                <div class="LoginLoginEmailContainer">
+                    <label class="LoginLoginEmailLabel Label">Email:</label>
+                    <input type="text" value="" class="LoginLoginEmailTextBox TextBox" name="userEmail" id="LoginLoginEmailTextBox" />
+                </div>
+                <div class="LoginLoginPasswordContainer">
+                    <label class="LoginLoginPasswordLabel Label">Jelszó:</label>
+                    <input type="password" value="" class="LoginLoginPasswordTextBox TextBox" name="userPassword" id="LoginLoginPasswordTextBox" />
+                </div>
+                <div class="LoginLoginButtonsContainer">
+                    <input type="submit" value="Belépés" class="LoginLoginLoginButton Button" id="LoginLoginLoginButton"  disabled />
+                    <input type="button" value="Törlés" class="LoginLoginResetButton Button" id="LoginLoginResetButton" disabled />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="LoginLoginBackLink">@Html.ActionLink("Vissza", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+</div>
+
