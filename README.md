@@ -18,7 +18,7 @@ Used languages:
 
 Features:
 ---------
-- Dynamoc input checking
+- Dynamic input checking
 - .Net SqlClient
 - Microsoft-SQL connection with SQL authentication
 
