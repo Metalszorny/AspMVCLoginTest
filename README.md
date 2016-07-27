@@ -9,7 +9,7 @@ An ASP MVC 5 login test web application that connects to Microsoft-Sql Server an
 
 Used languages:
 ---------------
-- C#
+- Visual C#
 - SQL
 - HTML
 - CSS
