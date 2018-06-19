@@ -20,9 +20,8 @@ namespace AspMVCLoginTest.Controllers
 
         #region Methods
 
-        // GET: Home
         /// <summary>
-        /// Pre Index View.
+        /// The GET controller of the Index view.
         /// </summary>
         /// <returns>The Index View.</returns>
         public ActionResult Index()
@@ -37,7 +36,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Pre Login View.
+        /// The GET controller of the Login view.
         /// </summary>
         /// <returns>The Login View.</returns>
         public ActionResult Login()
@@ -46,7 +45,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Post Login View.
+        /// The POST controller of the Login view.
         /// </summary>
         /// <param name="formCollection">The values from the form.</param>
         /// <returns>The Login or the Loggedin View.</returns>
@@ -75,7 +74,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Pre Users View.
+        /// The GET controller of the Users view.
         /// </summary>
         /// <returns>The Users View.</returns>
         public ActionResult Users()
@@ -96,7 +95,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Pre Registration View.
+        /// The GET controller of the Registration view.
         /// </summary>
         /// <returns>The Registration View.</returns>
         public ActionResult Registration()
@@ -105,7 +104,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Post Registration View.
+        /// The POST controller of the Registration view.
         /// </summary>
         /// <param name="formCollection">The values from the form.</param>
         /// <returns>The Registration or the Index View.</returns>
@@ -126,7 +125,7 @@ namespace AspMVCLoginTest.Controllers
         }
 
         /// <summary>
-        /// Pre LoggedIn View.
+        /// The GET controller of the LoggedIn view.
         /// </summary>
         /// <param name="input">The values for the logged in user.</param>
         /// <returns>The Loggedin or the Index View.</returns>

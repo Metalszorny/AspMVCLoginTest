@@ -117,6 +117,12 @@ namespace AspMVCLoginTest.Models
             this.registrationDate = registrationdate;
             this.isDeleted = isdeleted;
         }
+		
+		/// <summary>
+        /// Deconstructs the instance of the <see cref="User"/> class.
+        /// </summary>
+        ~User()
+        { }
 
         #endregion Constructors
 

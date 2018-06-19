@@ -1,81 +1,68 @@
-﻿body
-{
+﻿body {
     margin: 0;
     font-size: 12px;
     color: black;
 }
 
-a
-{
+a {
     margin: 0;
     padding: 0;
     height: 30px;
 }
 
-div.LoginHeader
-{
+div.LoginHeader {
     height: 70px;
     background-color: #a5d181;
 }
 
-div.LoginMessageLine
-{
+div.LoginMessageLine {
     height: 30px;
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
 }
 
-label.LoginWelcomeLabel
-{
+label.LoginWelcomeLabel {
     float: left;
 }
 
-div.LoginLogoutLink
-{
+div.LoginLogoutLink {
     float: right;
 }
 
-div.LoginMenuLine
-{
+div.LoginMenuLine {
     height: 30px;
     width: 300px;
     margin-left: auto;
     margin-right: auto;
 }
 
-div.LoginLoginActionLink
-{
+div.LoginLoginActionLink {
     float: left;
 }
 
-div.LoginRegistrationActionLink
-{
+div.LoginRegistrationActionLink {
     float: right;
 }
 
-hr.LoginSeperatorLine
-{
+hr.LoginSeperatorLine {
     border: 0;
     margin: 0;
     background: #6d6e6b;
     height: 2px;
 }
 
-div.LoginMain
-{
+div.LoginMain {
     background-image: url(../Resources/BG_tile_textil.png);
     margin-top: 19px;
 }
 
-label.Label
-{
+label.Label {
     float: left;
     padding-top: 5px;
 }
 
-input.Button
-{
+input.Button {
     width: 100px;
     background-image: linear-gradient(#a1d181, #7a9762);
     color: #ffffff;
@@ -83,32 +70,28 @@ input.Button
     border-color: #808080;
 }
 
-input.Button:hover
-{
+input.Button:hover {
     background-image: linear-gradient(#5f7f46, #5f7f46);
     color: #ffffff;
     border-width: 1px;
     border-color: #808080;
 }
 
-input.Button:active
-{
+input.Button:active {
     background-image: linear-gradient(#7a9762, #a1d181);
     color: #ffffff;
     border-width: 1px;
     border-color: #808080;
 }
 
-input.Button:disabled
-{
+input.Button:disabled {
     background-image: linear-gradient(#a4a4a4, #505050);
     color: #ffffff;
     border-width: 1px;
     border-color: #808080;
 }
 
-input.TextBox
-{
+input.TextBox {
     float: right;
     height: 25px;
     width: 130px;
@@ -119,25 +102,21 @@ input.TextBox
     padding-left: 10px;
 }
 
-div.LoginIndex
-{
+div.LoginIndex {
     height: 500px;
 }
 
-div.LoginIndexWelcome
-{
+div.LoginIndexWelcome {
     padding-top: 5%;
     text-align: center;
 }
 
-div.LoginLogin
-{
+div.LoginLogin {
     height: 500px;
     padding-top: 10%;
 }
 
-div.LoginLoginPanel
-{
+div.LoginLoginPanel {
     height: 200px;
     width: 300px;
     margin-left: auto;
@@ -149,13 +128,11 @@ div.LoginLoginPanel
     background-color: #ededed;
 }
 
-div.LoginLoginArea
-{
+div.LoginLoginArea {
     padding: 20px;
 }
 
-label.LoginLoginTitleLabel
-{
+label.LoginLoginTitleLabel {
     height: 28px;
     font-size: 13px;
     text-align: center;
@@ -163,81 +140,67 @@ label.LoginLoginTitleLabel
     display: block;
 }
 
-hr.LoginLoginSeperatorLine
-{
+hr.LoginLoginSeperatorLine {
     border: 0;
     height: 2px;
     margin: 0;
     background: #a5d181;
 }
 
-form.LoginLoginForm
-{
+form.LoginLoginForm {
     margin-top: 24px;
 }
 
-div.LoginLoginEmailContainer
-{
+div.LoginLoginEmailContainer {
     padding-bottom: 10px;
     height: 30px;
 }
 
-label.LoginLoginEmailLabel
-{
+label.LoginLoginEmailLabel {
     
 }
 
-input.LoginLoginEmailTextBox
-{
+input.LoginLoginEmailTextBox {
     
 }
 
-div.LoginLoginPasswordContainer
-{
+div.LoginLoginPasswordContainer {
     padding-bottom: 50px;
     height: 30px;
 }
 
-label.LoginLoginPasswordLabel
-{
+label.LoginLoginPasswordLabel {
     
 }
 
-input.LoginLoginPasswordTextBox
-{
+input.LoginLoginPasswordTextBox {
     
 }
 
-div.LoginLoginButtonsContainer
-{
+div.LoginLoginButtonsContainer {
     height: 300px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-input.LoginLoginLoginButton
-{
+input.LoginLoginLoginButton {
     float: left;
 }
 
-input.LoginLoginResetButton
-{
+input.LoginLoginResetButton {
     float: right;
 }
 
-div.LoginLoginBackLink
-{
+div.LoginLoginBackLink {
     padding-top: 10%;
 }
 
-div.LoginRegistration
-{
+div.LoginRegistration {
     height: 500px;
     padding-top: 6%;
 }
 
-div.LoginRegistrationPanel
-{
+div.LoginRegistrationPanel {
     height: 300px;
     width: 300px;
     margin-left: auto;
@@ -249,13 +212,11 @@ div.LoginRegistrationPanel
     background-color: #ededed;
 }
 
-div.LoginRegistrationArea
-{
+div.LoginRegistrationArea {
     padding: 20px;
 }
 
-label.LoginRegistrationTitleLabel
-{
+label.LoginRegistrationTitleLabel {
     height: 28px;
     font-size: 13px;
     text-align: center;
@@ -263,127 +224,103 @@ label.LoginRegistrationTitleLabel
     display: block;
 }
 
-hr.LoginRegistrationSeperatorLine
-{
+hr.LoginRegistrationSeperatorLine {
     border: 0;
     height: 2px;
     margin: 0;
     background: #a5d181;
 }
 
-form.LoginRegistrationForm
-{
+form.LoginRegistrationForm {
     margin-top: 24px;
 }
 
-div.LoginRegistrationNameContainer
-{
+div.LoginRegistrationNameContainer {
     padding-bottom: 10px;
     height: 30px;
 }
 
-label.LoginRegistrationNameLabel
-{
+label.LoginRegistrationNameLabel {
 
 }
 
-input.LoginRegistrationNameTextBox
-{
+input.LoginRegistrationNameTextBox {
 
 }
 
-div.LoginRegistrationEmailContainer
-{
+div.LoginRegistrationEmailContainer {
     padding-bottom: 10px;
     height: 30px;
 }
 
-label.LoginRegistrationEmailLabel
-{
+label.LoginRegistrationEmailLabel {
 
 }
 
-input.LoginRegistrationEmailTextBox
-{
+input.LoginRegistrationEmailTextBox {
 
 }
 
-div.LoginRegistrationPasswordContainer
-{
+div.LoginRegistrationPasswordContainer {
     padding-bottom: 10px;
     height: 30px;
 }
 
-label.LoginRegistrationPasswordLabel
-{
+label.LoginRegistrationPasswordLabel {
 
 }
 
-input.LoginRegistrationPasswordTextBox
-{
+input.LoginRegistrationPasswordTextBox {
 
 }
 
-div.LoginRegistrationPasswordAgainContainer
-{
+div.LoginRegistrationPasswordAgainContainer {
     padding-bottom: 90px;
     height: 30px;
 }
 
-label.LoginRegistrationPasswordAgainLabel
-{
+label.LoginRegistrationPasswordAgainLabel {
 
 }
 
-input.LoginRegistrationPasswordAgainTextBox
-{
+input.LoginRegistrationPasswordAgainTextBox {
 
 }
 
-div.LoginRegistrationButtonsContainer
-{
+div.LoginRegistrationButtonsContainer {
     height: 30px;
 }
 
-input.LoginRegistrationRegisterButton
-{
+input.LoginRegistrationRegisterButton {
     float: left;
 }
 
-input.LoginRegistrationResetButton
-{
+input.LoginRegistrationResetButton {
     float: right;
 }
 
-div.LoginRegistrationBackLink
-{
+div.LoginRegistrationBackLink {
     padding-top: 5%;
 }
 
-div.LoginLoggedIn
-{
+div.LoginLoggedIn {
     height: 500px;
     padding-top: 5%;
 }
 
-div.LoginLoggedInWelcome
-{
+div.LoginLoggedInWelcome {
     padding-bottom: 5%;
 }
 
-div.LoginLoggedInUsersLink
-{
+div.LoginLoggedInUsersLink {
 
 }
 
-div.LoginUsers
-{
-    /*height: 500px;*/
+div.LoginUsers {
     padding-top: 5%;
 }
 
-div.LoginUsersPanel
-{
+div.LoginUsersPanel {
     width: 700px;
     margin-left: auto;
     margin-right: auto;
@@ -394,13 +331,11 @@ div.LoginUsersPanel
     background-color: #ededed;
 }
 
-div.LoginUsersArea
-{
+div.LoginUsersArea {
     padding: 20px;
 }
 
-table.LoginUsersTable
-{
+table.LoginUsersTable {
     height: 100%;
     width: 100%;
     border: solid;
@@ -409,58 +344,49 @@ table.LoginUsersTable
     margin-right: auto;
 }
 
-tr.LoginUsersTableRow1
-{
+tr.LoginUsersTableRow1 {
     font-weight: bold;
     color: white;
     background-color: #6d6e6b;
     text-align: center;
 }
 
-tr.LoginUsersTableRow2
-{
+tr.LoginUsersTableRow2 {
     font-weight: bold;
     background-color: #a5d181;
 }
 
-tr.LoginUsersTableContent
-{
+tr.LoginUsersTableContent {
     background-color: white;
 }
 
-div.LoginUsersBackLink
-{
+div.LoginUsersBackLink {
     padding-top: 10%;
 }
 
-div.LoginUsersSpace
-{
+div.LoginUsersSpace {
     height: 40px;
 }
 
-div.LoginFooter
-{
+div.LoginFooter {
     height: 30px;
     background-color: #6d6e6b;
     color: white;
 }
 
-div.LoginCredits
-{
+div.LoginCredits {
     padding-top: 5px;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
 
-div.LoginName
-{
+div.LoginName {
     float: left;
     font-weight: bold;
 }
 
-div.LoginEmail
-{
+div.LoginEmail {
     float: right;
     font-weight: bold;
 }

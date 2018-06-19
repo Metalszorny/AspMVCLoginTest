@@ -1,5 +1,4 @@
 # AspMVCLoginTest
-=================
 
 
 About:
@@ -18,8 +17,11 @@ Used languages:
 
 Features:
 ---------
+- Shared page layout
 - Dynamic input checking
-- .Net SqlClient
+- Static functionality
+- Session for logged in state
+- .Net ADO SqlClient
 - Microsoft-SQL connection with SQL authentication
 
 
